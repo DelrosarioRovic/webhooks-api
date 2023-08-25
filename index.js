@@ -14,7 +14,7 @@ app.post("/webhook", (req, res) => {
   //   const productData = payload.data; // Product data
   //   console.log('New product created:', productData);
   // }
-  // res.send('Webhook received');
+  return res.status(200).json({message: "Success"});
 });
 
 app.listen(port, () => {

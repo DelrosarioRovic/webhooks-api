@@ -4,7 +4,7 @@ const port = 3000;
 
 app.use(express.json()); // Parse JSON requests
 
-app.post('/api/webhook', (req, res) => {
+app.get('/api/webhook', (req, res) => {
   const payload = req.body; 
   console.log(payload);
   // if (payload && payload.topic === 'products/create') {
